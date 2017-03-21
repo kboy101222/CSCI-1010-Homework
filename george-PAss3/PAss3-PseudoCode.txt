@@ -1,0 +1,19 @@
+print("Welcome to Kyle's Kalorie Kounter!")
+
+constant badmRate, runRate, walkRate, weightsRate = .044, .087, .036, .042;
+
+weight = input("Enter your weight in pounds: ")
+
+badmitton = input("Enter the amount of time spent playing Badmitton: ")
+running = input("Enter the amount of time spent running: ")
+walking = input("Enter the amount of time spent walking: ")
+weights = input("Enter the amount of time spent lifing weights: ")
+
+caloriesBurned = ((weight * badmittonRate) * badmitton) + ((weight * runningRate) * running) + ((weight * walkingRate) * walking) + ((weight * weights) * weightsRate);
+
+hours = (badmitton + running + walking + weights) / 60;
+minutes = (badmitton + running + walking + weights) % 60;
+
+print("You burned " + caloriesBurned + " calories over " + hours + " hours and " + minutes + " of exercise")
+
+pause()
